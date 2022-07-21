@@ -70,7 +70,8 @@
     key.classList.add('playing');
   };
 
-
+  // Tried using an arrow funtion here, but was not executing the code.
+  // Perhaps because of the 'this' keyword. Doesnt work within an arrow function????
   const removeTransition = function (e) {
     if (e.propertyName !== 'transform') return; // skips it if its not a transform.
     this.classList.remove('playing');
